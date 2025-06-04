@@ -1,0 +1,104 @@
+/* fonts */
+
+@font-face {
+  font-family: "lato-bold";
+  src: url(/assets/fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: "lato-regular";
+  src: url(/assets/fonts/Lato-Regular.ttf);
+}
+
+$title-font: "lato-bold";
+$body-font: "lato-regular";
+
+/* variables */
+
+:root {
+  --color-primary-light: #5fc3ff;
+  --color-primary-dark: #15a5fc;
+
+  --color-heading-black: #2d3950;
+  --color-heading-white: #ffffff;
+  --color-small-text: #aaabab;
+
+  --color-grey-background: #f6f9f9;
+}
+
+
+/* common page settings */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
+
+//   @media screen and (max-width: 899px) {
+//     font-size: 56.25%; /* 1rem = 9px */
+//   }
+
+//   @media screen and (max-width: 699px) {
+//     font-size: 50%; /* 1rem = 8px */
+//   }
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  font-family: $body-font, sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.btn {
+
+  background: transparent;
+  border-style: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.arrow-down {
+  display: block;
+  font-size: 1.8rem;
+  color: var(--color-heading-white);
+  margin-top: 10rem;
+  animation: moveArrowDown 3s infinite;
+}
+
+
+/* animations */
+
+@keyframes moveArrowDown {
+  0% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+}

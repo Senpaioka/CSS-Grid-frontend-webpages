@@ -1,0 +1,113 @@
+@use './base' as *;
+
+
+.contact {
+
+    background-image: linear-gradient(to right, rgba(26, 26, 124, 0.3), rgba(26, 26, 124, 0.3)), url(/assets/img/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 3rem 1rem;
+    }
+
+    &__text {
+        font-family: $title-font;
+        font-size: 2.6rem;
+        color: var(--color-heading-white);
+        text-transform: capitalize;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    &__subtext {
+        font-family: $body-font;
+        font-size: 1.8rem;
+        color: var(--color-heading-white);
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    &__form {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 1rem;
+
+
+        &--label {
+            display: block;
+            font-size: $title-font;
+            font-size: 1.6rem;
+            color: var(--color-heading-white);
+            text-transform: capitalize;
+            padding: .5rem .5rem;
+        }
+
+        &--input {
+            width: 450px;
+            height: 60px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            background: transparent;
+
+            &:focus {
+                outline: none;
+                border: 1px solid var(--color-primary-dark)
+            }
+
+            &::placeholder {
+                font-family: $body-font;
+                font-size: 1.4rem;
+                color: var(--color-small-text);
+                padding: 1rem 1rem;
+            }
+        }
+
+        &--textarea{
+            width: 450px;
+            height: 150px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            background: transparent;
+
+            &:focus {
+                outline: none;
+                border: 1px solid var(--color-primary-dark)
+            }
+
+            &::placeholder {
+                font-family: $body-font;
+                font-size: 1.4rem;
+                color: var(--color-small-text);
+                padding: 1rem 1rem;
+            }
+        }
+
+        &--action {
+            padding: 3rem 1rem;
+            display: flex;
+            width: 450px;
+            justify-content: space-between;
+
+            &-box {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &--btn {
+            border: 1px solid #fff;
+            transition: all .3s;
+
+            &:hover {
+                background: var(--color-primary-dark);
+            }
+        }
+    }
+}

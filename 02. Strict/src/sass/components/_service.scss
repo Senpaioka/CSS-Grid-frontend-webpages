@@ -1,0 +1,45 @@
+@use './base' as *;
+
+.service {
+
+    &__container {
+        background-color: var(--color-grey-background);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-rows: auto;
+        gap: 1rem;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 3rem 1rem;
+    }
+
+    &__item {
+
+        padding: 2rem 1rem;
+        text-align: center;
+
+        &--icon i {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(to right, var(--color-primary-dark) 50%,var(--color-primary-light) 50%);
+            font-size: 5rem;
+            color: var(--color-grey-background);
+            padding-top: 15px;
+        }
+
+        &--text {
+            font-family: $title-font;
+            font-size: 1.8rem;
+            text-transform: capitalize;
+            color: var(--color-heading-black);
+            padding: 2rem 1rem;
+        }
+
+        &--details {
+            font-family: $body-font;
+            font-size: 1.6rem;
+            color: var(--color-small-text);
+        }
+    }
+}

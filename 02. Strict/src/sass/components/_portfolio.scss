@@ -1,0 +1,48 @@
+@use './base' as *;
+
+
+.portfolio {
+
+    &__container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__text {
+        font-family: $title-font;
+        font-size: 2.6rem;
+        color: var(--color-heading-black);
+        text-align: center;
+        padding: 2rem 1rem;
+        margin-top: 2rem;
+    }   
+    
+    &__details {
+        font-family: $body-font;
+        font-size: 1.8rem;
+        color: var(--color-small-text);
+        text-align: center;
+        padding: 1rem 1rem;
+    }
+
+    &__showcase {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-rows: auto;
+        align-items: center;
+        justify-items: center;
+        gap: 1rem;
+
+        padding: 5rem 0;
+
+        &--item {
+            padding: 1rem 1rem;
+            transition: all .3s;
+
+            &:hover {
+                transform: translateY(-3px);
+            }
+        }
+    }
+}

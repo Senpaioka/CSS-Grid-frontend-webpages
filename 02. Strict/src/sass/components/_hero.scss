@@ -1,0 +1,50 @@
+@use './base' as *;
+
+.hero {
+    background-image: url(/assets/img/bennar.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    padding: 5rem 1rem;
+    height: 80vh;
+
+    &__container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: auto;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+        padding: 5rem 0;
+    }
+    
+    &__text {
+        font-family: $title-font;
+        font-size: 8rem;
+        color: var(--color-heading-white);
+        text-transform: uppercase;
+        padding: 3rem 0;
+    }
+
+    &__subtext {
+        font-family: $body-font;
+        font-size: 1.8rem;
+        color: var(--color-heading-white);
+        border-top: 2px solid var(--color-primary-dark);
+        width: 50%;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+
+    &__btn {
+        border: 1px solid var(--color-primary-dark);
+        transition: all .3s;
+        margin-top: 8rem;
+
+        &:hover {
+            background: var(--color-primary-dark);
+        }
+    }
+
+}

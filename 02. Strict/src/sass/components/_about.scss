@@ -1,0 +1,31 @@
+@use './base' as *;
+
+
+.about {
+
+    display: grid;
+
+    &__container {
+        background-color: var(--color-grey-background);
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    &__text {
+        font-family: $title-font;
+        font-size: 2.6rem;
+        color: var(--color-heading-black);
+        padding: 3rem 1rem;
+    }
+
+    &__details {
+        font-family: $body-font;
+        font-size: 1.6rem;
+        color: var(--color-small-text);
+        width: 70%;
+        margin: 0 auto;
+    }
+}
