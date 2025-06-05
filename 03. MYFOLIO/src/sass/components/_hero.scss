@@ -1,0 +1,45 @@
+@use './base' as *;
+
+
+.hero {
+
+    background-image: url(/assets/img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        height: 80vh;
+        text-align: center;
+
+        padding: 20rem 2rem;
+    }
+
+    &__upper {
+        font-family: $title-font;
+        font-size: 2.2rem;
+        color: var(--color-bg-light);
+    }
+
+    &__text {
+        font-family: $title-font;
+        font-size: 5rem;
+        color: var(--color-bg-light);
+        text-transform: uppercase;
+        letter-spacing: 2rem;
+        padding: 2rem 0;
+    }
+
+    &__down {
+        font-family: $title-font;
+        font-size: 1.6rem;
+        color: var(--color-bg-light);
+    }
+
+    &__btn {
+        margin-top: 10rem;
+    }
+}

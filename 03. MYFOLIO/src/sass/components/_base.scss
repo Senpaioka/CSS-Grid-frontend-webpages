@@ -1,0 +1,86 @@
+
+
+/* fonts */
+@font-face {
+  font-family: "sans-bold";
+  src: url("/assets/fonts/OpenSans-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "sans-regular";
+  src: url("/assets/fonts/OpenSans-Regular.ttf");
+}
+
+$title-font: "sans-bold";
+$body-font: "sans-regular";
+
+
+/* variables */
+
+:root {
+  --color-primary: #02918c;
+  --color-btn-yellow: #cfc91d;
+
+  --color-bg-light: #f0f0e8;
+  --color-bg-dark: #0b0b0b;
+  --color-bg-darkest: #000000;
+
+  --color-text-light: #969a9d;
+  --color-text-dark: #83878c;
+}
+
+
+/* common page settings */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
+
+    @media screen and (max-width: 900px) {
+    font-size: 56.25%; /* 1rem = 9px */
+  }
+
+  @media screen and (max-width: 700px) {
+    font-size: 50%; /* 1rem = 8px */
+  }
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  font-family: $body-font, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.btn {
+  padding: 1rem 3rem;
+  background: var(--color-btn-yellow);
+  color : var(--color-bg-darkest);
+  font-family: $title-font;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.underline__pattern {
+  font-size: 1.4rem;
+  color: var(--color-text-dark);
+}
