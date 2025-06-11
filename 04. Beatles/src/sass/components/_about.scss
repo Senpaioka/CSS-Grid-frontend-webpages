@@ -1,0 +1,38 @@
+@use './base' as *;
+
+.about {
+
+    &__container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__heading {
+        text-align: center;
+        padding: 5rem 1rem;
+    }
+
+    &__text {
+        font-family: $font-med;
+        font-size: 2.2rem;
+        text-transform: uppercase;
+    }
+
+    &__main {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 1rem;
+        padding: 1rem 1rem;
+        justify-items: center;
+        align-items: center;
+
+        &--text {
+            font-family: $font-small;
+            font-size: 1.4rem;
+            color: var(--color-text-small);
+            padding: 1rem 0;
+        }
+    }
+}

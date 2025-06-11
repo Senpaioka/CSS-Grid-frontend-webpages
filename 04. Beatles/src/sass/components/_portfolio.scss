@@ -1,0 +1,36 @@
+@use './base' as *;
+
+.portfolio {
+
+    &__container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 5rem 1rem;
+    }   
+    
+    &__heading {
+        text-align: center;
+    }
+
+    &__text {
+        font-family: $font-med;
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        color: var(--color-text-bold);
+    }
+
+    &__img {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: auto;
+        gap: 1rem;
+        padding: 3rem 1rem;
+
+        &--item img{
+            object-fit: cover;
+            width: 100%;
+            padding: 5px 0;
+        }
+    }
+}

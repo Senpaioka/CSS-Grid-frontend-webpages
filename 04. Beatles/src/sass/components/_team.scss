@@ -1,0 +1,63 @@
+@use './base' as *;
+
+.team {
+
+    &__container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__text {
+        font-family: $font-med;
+        font-size: 2.2rem;
+        color: var(--color-text-bold);
+        text-transform: uppercase;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;       
+        padding: 3rem 1rem; 
+
+        &--item  {
+            padding: 1rem 1rem;
+            overflow: hidden;
+        }
+
+        &--img {
+
+            transition: all .3s ease;
+            overflow: hidden;
+            object-fit: cover;
+
+            &:hover {
+                transform: translateY(-3px) scale(1.01);
+            }
+        }
+
+        &--name  {
+            font-family: $font-med;
+            font-size: 1.6rem;
+            color: var(--color-text-bold);
+            text-transform: uppercase;
+            padding: 1rem 1rem;
+        }
+
+        &--post {
+            font-family: $font-med;
+            font-size: 1.2rem;
+            color: var(--color-text-small);
+            text-transform: uppercase;
+        }
+    }
+}

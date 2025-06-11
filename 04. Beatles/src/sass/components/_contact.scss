@@ -1,0 +1,110 @@
+@use './base' as *;
+
+.contact {
+
+    background-color: var(--color-bg-dark);
+
+    &__container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: auto;
+        gap: 1rem;
+        padding: 3rem 1rem;
+    }
+
+    &__icon {
+
+        &-text {
+            font-family: $font-small;
+            font-size: 1.2rem;
+            color: #fff;
+            padding: 3rem 1rem;
+        }
+    }
+
+    &__info {
+
+        &--heading {
+            font-family: $font-med;
+            font-size: 1.6rem;
+            color: #fff;
+            text-transform: capitalize;
+            padding-bottom: 3rem;
+        }
+
+        &--item {
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+
+            &-icon {
+                font-size: 2rem;
+                color: #fff;
+                width: 40px;
+                height: 40px;
+                background: var(--color-primary);
+                text-align: center;
+                border-radius: 50%;
+                padding: .5rem 0;
+            }
+
+            &-text {
+                padding: 1rem 1rem;
+            }
+
+            &-small {
+                font-family: $font-small;
+                font-size: 1.4rem;
+                color: #fff;
+
+            }
+        }
+    }
+
+    &__links {
+
+        &--heading {
+            font-family: $font-med;
+            font-size: 1.6rem;
+            color: #fff;
+            padding-bottom: 3rem;
+        }
+
+        &--item {
+            display: flex;
+        }
+
+        &--link:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        &--link a {
+            font-family: $font-small;
+            font-size: 1.4rem;
+            color: #fff;
+            display: block;
+            text-transform: capitalize;
+            padding: 5px 0;
+            transition: all .3s ease;
+
+            &:hover {
+                color: var(--color-primary);
+            }
+        }
+    }
+
+
+    &__photo {
+
+        &--heading {
+            font-family: $font-med;
+            font-size: 1.6rem;
+            color: #fff;
+            padding-bottom: 3rem;
+        }
+    }
+}

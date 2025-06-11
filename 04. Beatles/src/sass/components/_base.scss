@@ -1,0 +1,84 @@
+
+/* variables */
+
+:root {
+  --color-primary: #1899e8;
+  
+  --color-bg-grey: #f1f1f1;
+  --color-bg-dark: #353535;
+
+  --color-text-bold: #353535;
+  --color-text-small: #828282;
+}
+
+/* font settings */
+
+@font-face {
+  font-family: oswald-bold;
+  src: url(/assets/fonts/Oswald-Bold.ttf);
+}
+
+@font-face {
+  font-family: oswald-med;
+  src: url(/assets/fonts/Oswald-Medium.ttf);
+}
+
+@font-face {
+  font-family: oswald-reg;
+  src: url(/assets/fonts/Oswald-Regular.ttf);
+}
+
+@font-face {
+  font-family: sans-reg;
+  src: url(/assets/fonts/OpenSans-Regular.ttf);
+}
+
+$font-bold: oswald-bold;
+$font-med: oswald-med;
+$font-reg: oswald-reg;
+$font-small: sans-reg;
+
+
+/* common page settings */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
+
+  @media screen and (max-width: 900px) {
+    font-size: 56.25%; /* 1rem = 9px */
+  }
+
+  @media screen and (max-width: 700px) {
+    font-size: 50%; /* 1rem = 8px */
+  }
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  font-family: $font-small, sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.title__underline {
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--color-primary);
+}

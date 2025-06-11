@@ -1,0 +1,70 @@
+@use './base' as *;
+
+
+.service {
+
+    &__container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 1rem 1rem;
+    }
+
+    &__heading {
+        padding: 3rem 0;
+    }
+
+    &__text {
+        font-family: $font-med;
+        font-size: 2.2rem;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+
+    &__item {
+
+        padding: 3rem 0;
+        margin: 0 auto;
+
+        &--logo-container {
+            width: 80px;
+            height: 80px;
+            background: var(--color-bg-grey);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;     
+            margin: 0 auto;     
+            border: 2px solid #fff; 
+            position: absolute;
+            z-index: 1;
+            margin-top: -40px;
+            margin-left: 135px;
+        }
+
+        &--heading {
+            position: relative;
+            background: var(--color-bg-grey);
+            font-family: $font-med;
+            font-size: 1.8rem;
+            color: var(--color-text-bold);
+            text-transform: uppercase;
+            padding-top: 60px;
+        }
+
+        &--details {
+            background: var(--color-bg-grey);
+            font-family: $font-small;
+            font-size: 1.4rem;
+            color: var(--color-text-small);
+            padding: 1rem 1rem;
+        }
+    }
+}

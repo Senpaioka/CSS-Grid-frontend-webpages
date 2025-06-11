@@ -1,0 +1,28 @@
+@use './base' as *;
+
+
+.footer {
+    background-color: var(--color-text-small);
+
+    &__container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__text {
+        text-align: center;
+        font-family: $font-small;
+        font-size: 1.4rem;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 2rem 1rem;
+
+        span {
+            font-family: inherit;
+            font-size: 1.6rem;
+            color: var(--color-primary);
+            text-transform: uppercase;
+        }
+    }
+}

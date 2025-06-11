@@ -1,0 +1,64 @@
+@use './base' as *;
+
+.hero {
+
+    background-image: linear-gradient(to right,rgba(48, 48, 48, .6), rgba(48, 48, 48, .6)), url(/assets/img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__container {
+        max-width: 1200px;
+        width: 100%;
+        height: 70vh;
+        margin: 0 auto;
+        text-align: right;
+        padding: 3rem 1rem;
+    }
+
+    &__upper {
+        font-family: $font-med;
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: 15rem;
+    }
+
+    &__text {
+        font-family: $font-bold;
+        font-size: 4rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &__details {
+        font-size: $font-small;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+        color: #fff;
+        width: 50%;
+        justify-self: right;
+        padding: 3rem 0;
+    }
+
+    &__btn {
+
+        &--link {
+            font-family: $font-med;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: .5rem 2rem;
+            transition: all .3s;
+
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+
+            &:hover {
+                background: var(--color-primary);
+            }
+        }
+    }
+}
